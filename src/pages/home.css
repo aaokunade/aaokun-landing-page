@@ -1,0 +1,335 @@
+body {
+    width: 100%;
+    opacity: 1;
+    background-color: thistle;
+}
+body::after {
+    content: "";
+    background: url("https://miro.medium.com/max/2000/1*j18U6uvAg-ta2XBvDKNQlA.jpeg");
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.header {
+    width: 100%;
+    background-color: rgb(247, 193, 229);
+    display:flex;
+    justify-content: space-between;
+    padding: o.5%;
+}
+
+.header h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.header h2:hover {
+    color: rgb(247, 0, 255);
+}
+
+.header span {
+    font-size: 1.5rem;
+    width: 1%;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.logo-image {
+    width: 10rem;
+    border: 0.5rem  whitesmoke;
+    
+} 
+ .logo-image img {
+    border-radius: 50%;
+ }
+
+.home-buttons .link {
+    padding: 0.5%;
+    border: 1px solid rgb(24, 1, 19);
+    color: black;
+    margin: 2%;
+    width:7rem;
+    text-align: center;
+    border-radius: 8%;
+    font-size: 1.0rem;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    outline: none;
+    position: relative;
+    z-index: 1;
+} 
+.home-buttons .link:before {
+    transition: 0.8s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: rgb(255, 0, 200);
+} 
+
+.home-buttons .link:hover:before {
+    transition: 0.8s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.welcome-text {
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 2%;
+    font-size: 1.0rem;
+    text-align: justify;
+}
+
+.welcome-text::first-line {
+    color: rgb(58, 1, 80);
+    font-size: 5.0rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.project-main {
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    margin-top: 10%;
+    width:100%;
+}
+
+.contact-main {
+    display:flex;
+    flex-direction: column;
+}
+
+.contact-image {
+    width: 100%;
+    height: 30%;
+}
+
+.contact-home-links {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+
+.contact-home-links p {
+    font-size: 1.5rem;
+}
+.contact-icons-home {
+    text-decoration: none;
+    color: rgb(138, 19, 250);
+    font-size: 2.5rem;
+    margin-right: 1%;
+}
+
+
+.home-links {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.home-footer p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.icons-home {
+    text-decoration: none;
+    color: rgb(138, 19, 250);
+    font-size: 1.5rem;
+    margin-right: 1%;
+}
+
+.icons-home:hover {
+    color: rgb(255, 0, 179);
+}
+
+@media only screen and (min-width: 400px) and (max-width: 750px) {
+    body {
+        width: 100%;
+        margin: auto;
+        min-height: 100%;
+        padding: 1%;
+    }
+
+    .header {
+        width: 100%;
+        background-color: rgb(243, 139, 221);
+        display:flex;
+        /* align-items: center; */
+        justify-content: space-around;
+        padding: 0.5%;
+        position:0;
+    }
+    .project-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width:100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .contact-home-links {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-evenly;
+        padding-top: 5%;
+    }
+
+    .contact-home-links p {
+        font-size: 1.5rem;
+    }
+    .contact-icons-home {
+        text-decoration: none;
+        color: rgb(138, 19, 250);
+        font-size: 2.5rem;
+        margin-right: 1%;
+    }
+
+    .card {
+        margin: 2rem 2rem 2rem 0rem;
+    }
+}
+
+
+@media only screen and (min-width: 750px) {
+    body {
+        width: 100%;
+        margin: auto;
+        min-height: 100%;
+        padding: 1%;
+    }
+
+    .home-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header h2 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .header {
+        width: 100%;
+        background-color: rgb(243, 139, 221);
+        display:flex;
+        /* align-items: center; */
+        justify-content: space-evenly;
+        padding: 0.5%;
+        position:0;
+    }
+
+    .welcome-text {
+        width: 50%;
+        margin-left: 3%;
+        margin-right: 2%;
+        font-size: 1.5rem;
+    }
+    
+    .welcome-text::first-line {
+        color: rgb(183, 0, 255);
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10%;
+    }
+
+    .project-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width:100%;
+        height: auto;
+        align-items: center;
+        margin: 0rem 1rem 0rem 1rem;
+    }
+
+    .contact-main {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .contact-image img {
+        width: 100%;
+        height: 20rem;
+    }
+
+    .contact-home-links {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-evenly;
+        padding-top: 5%;
+    }
+
+    .contact-home-links p {
+        font-size: 1.5rem;
+    }
+    .contact-icons-home {
+        text-decoration: none;
+        color: rgb(138, 19, 250);
+        font-size: 3.5rem;
+        margin-right: 1%;
+    }
+
+    .card {
+        margin: 5rem 5rem 5rem 0rem;
+    }
+
+    .home-image {
+        width: 50%;
+        margin-left: 2%;
+        margin-right: 3%;
+    }
+    
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo-image {
+        width: 15rem;
+        border: 0.5rem solid whitesmoke;
+        border-radius: 50%;
+    }
+
+    .logo-image img {
+        border-radius: 50%;
+     }
+  }
+
+  
+  
