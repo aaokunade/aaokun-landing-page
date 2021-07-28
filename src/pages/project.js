@@ -4,6 +4,8 @@ import {Card, Button} from 'react-bootstrap';
 import "./home.css";
 import image from "./images/knowledge-app.png";
 import baby from "./images/baby-app.png";
+import countries from "./images/countries-app.PNG";
+import videos from "./images/video-recom.png";
 import {FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaMailBulk} from "react-icons/fa"
 
 
@@ -51,14 +53,26 @@ function Project () {
 					</Card>
 
 					<Card>
-					<Card.Img variant="top" src= {image} />
+					<Card.Img variant="top" src= {countries} />
 					<Card.Body>
 						<Card.Title>Card Title</Card.Title>
 						<Card.Text>
 						Some quick example text to build on the card title and make up the bulk of
 						the card's content.
 						</Card.Text>
-						<Button variant="primary">Go somewhere</Button>
+						<Button variant="primary" href= "https://cyf-aaokunade-countries-react.netlify.app/" target="_blank">View App</Button>
+					</Card.Body>
+					</Card>
+
+					<Card>
+					<Card.Img variant="top" src= {videos} />
+					<Card.Body>
+						<Card.Title>Card Title</Card.Title>
+						<Card.Text>
+						Some quick example text to build on the card title and make up the bulk of
+						the card's content.
+						</Card.Text>
+						<Button variant="primary" href= "https://videos-recommendation.herokuapp.com/" target="_blank">View App</Button>
 					</Card.Body>
 					</Card>
 
@@ -70,19 +84,7 @@ function Project () {
 						Some quick example text to build on the card title and make up the bulk of
 						the card's content.
 						</Card.Text>
-						<Button variant="primary">Go somewhere</Button>
-					</Card.Body>
-					</Card>
-
-					<Card>
-					<Card.Img variant="top" src= {image} />
-					<Card.Body>
-						<Card.Title>Card Title</Card.Title>
-						<Card.Text>
-						Some quick example text to build on the card title and make up the bulk of
-						the card's content.
-						</Card.Text>
-						<Button variant="primary">Go somewhere</Button>
+						<Button variant="primary" href= "https://cyf-aaokunade-baby-names.netlify.app/" target="_blank">Go somewhere</Button>
 					</Card.Body>
 					</Card>
 				</div>
