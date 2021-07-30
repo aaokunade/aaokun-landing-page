@@ -5,7 +5,7 @@ body {
 }
 body::after {
     content: "";
-    background: url("https://miro.medium.com/max/2000/1*j18U6uvAg-ta2XBvDKNQlA.jpeg");
+    background-image: url("https://miro.medium.com/max/2000/1*j18U6uvAg-ta2XBvDKNQlA.jpeg"), linear-gradient(#0c0c0b, #2b0302);;
     opacity: 0.1;
     top: 0;
     left: 0;
@@ -46,6 +46,11 @@ body::after {
 .image {
     width: 100%;
     height: auto;
+}
+.home-image img{
+    border-radius: 50%;
+    background-color: rgb(116, 29, 116);
+    opacity: 1;
 }
 
 .logo-image {
@@ -98,6 +103,7 @@ body::after {
 }
 
 .welcome-text {
+    color: rgb(66, 8, 42);
     width: 100%;
     margin-left: 3%;
     margin-right: 2%;
